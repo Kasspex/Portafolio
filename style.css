@@ -6,7 +6,7 @@
     display: flex;
     justify-content: right;
     background-color: red;
-    background-image: url(/images/fondo\ portafolio.png);
+    background-image: url(./images/fondoPortafolio.png);
     background-position: center;
     padding: 10px;
 }
@@ -28,7 +28,7 @@ h1{
     font-style: normal;
     font-size: 96px;
     text-align: center;
-    background-image: url(./images/fondo\ portafolio.png);
+    background-image: url(./images/fondoPortafolio.png);
     background-size: cover;
     color: transparent;
     background-clip: text;
