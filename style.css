@@ -3,10 +3,13 @@
 body{
     background-color: #EEF7FF;
     margin: 0;
-    padding: 0;
+    padding: 0 10%;
     box-sizing: border-box;
 }
 .navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* para que quede encima del contenido */
     display: flex;
     justify-content: end;
     background-color: #FFFFFF;
@@ -114,7 +117,7 @@ h2{
 
 #Proyectos{
     background-color: #FFFFFF;
-    padding: 5%;
+    padding: 10%;
 }
 
 h3{
@@ -129,19 +132,124 @@ h3{
 }
 
 .card{
+    font-family: "Inter", sans-serif;
     background-color: #EEF7FF;
     border: none;
-    box-shadow: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 5%;
+
 
 }
 
 .card img{
     display: block;
-
     max-width: 100%; 
 }
 
 .card p{
+    font-size: 1rem;
     display: block;
     max-width: 100%;
+    padding: 5% 0 0;
+}
+
+.card a{
+    background-color: #1C1D58;
+    border: #1C1D58;
+}
+
+#sobre-mi{
+    padding: 10%;
+    max-width: 100%;
+}
+
+.sobre-mi-contenedor{
+    padding: 5% 30%;
+    display: flex;
+    align-items: center;
+}
+
+#habilidades{
+    background-color: #FFFFFF;
+    padding: 10%;
+}
+
+.lista-habilidades{
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+    padding: 3%;
+    gap: 5%;
+}
+
+.lista-habilidades li{
+    color: #FFFFFF;
+    list-style-type: none;
+    padding: 1rem 1.5rem;
+    background-color: #1C1D58;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contactame{
+    padding: 10%;
+}
+
+.contactame-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5%;
+    gap: 1rem;
+}
+
+.contactame-form h4{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+}
+
+.contactame-form input{
+    padding: 1rem;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+input[type=number] {
+    -moz-appearance: textfield; /* Firefox */
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;  /* Chrome, Safari, Edge */
+    margin: 0;
+}
+
+.contactame-form button{
+    width: 15%;
+    padding: 0.5rem 0.2rem;
+    display: flex;
+    justify-content: center;
+    background-color: #1C1D58;
+    color: #FFFFFF;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.final-pagina{
+    background-color: #FFFFFF;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lista-final{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.lista-final li{
+    list-style-type: none;
+    padding: 0.5rem;
 }
