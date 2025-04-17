@@ -1,22 +1,147 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
+body{
+    background-color: #EEF7FF;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .navbar{
     display: flex;
     justify-content: end;
+    background-color: #FFFFFF;
+    width: 100%;
+    margin: 2% 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
 }
 
 .menu{
     display: flex;
     list-style-type: none;
+    align-items: center;
+    margin: 0%;
 }
 
 .menu li{
-    padding: 0 1rem;
+    padding: 1rem 1rem;
 }
 
 .menu a{
+    display: flex;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-size: 1rem;
     white-space: nowrap;
     text-decoration: none;
     color: #244370;
+    align-items: center;
+}
+
+.menu a img{
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    transform: scale(1.5);
+}
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: auto;
+    padding: 10%;
+    width: auto;
+    height: auto;
+}
+
+.presentation-contenido{
+    max-width: 34rem;
+}
+
+.presentation-titulo{
+    width: auto;
+    height: auto;
+    display: flex;
+}
+
+.presentation-titulo img{
+    width: 100px;
+    height: 80px;
+}
+
+
+h1{
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    margin: 0%;
+    padding: 0%;
+    color: #21508D;
+    font-size: 4rem;
+}
+
+h2{
+    width: auto;
+    height: auto;
+    font-family: "Inter", sans-serif;
+    font-style: bold;
+    color: #64748B;
+    font-size: 3rem;
+    margin: 0%;
+    padding: 0%;
+}
+
+.presentation-footer{
+    display: flex;
+    justify-content: right;
+    margin: 3% 0%;
+    gap: 2rem;
+}
+
+.presentation-footer a{
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #1E90FF;
+    padding: 0.7rem 1.5rem ;
+    border-radius: 20px;
+}
+
+
+#Proyectos{
+    background-color: #FFFFFF;
+    padding: 5%;
+}
+
+h3{
+    font-family: "Inter", sans-serif;
+    font-style: bold;
+    font-size: 1.5rem;
+    color: #244370;
+}
+
+.col-md-6{
+    padding: 10px 10%;
+}
+
+.card{
+    background-color: #EEF7FF;
+    border: none;
+    box-shadow: none;
+
+}
+
+.card img{
+    display: block;
+
+    max-width: 100%; 
+}
+
+.card p{
+    display: block;
+    max-width: 100%;
 }
