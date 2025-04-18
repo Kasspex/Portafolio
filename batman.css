@@ -101,7 +101,7 @@ h2{
     font-size: 1rem;
     color: #FFFFFF;
     text-decoration: none;
-    background-color: #3a506b	;
+    background-color: #1C1D58	;
     ;
     padding: 0.7rem 1.5rem ;
     border-radius: 20px;
@@ -156,26 +156,23 @@ h3{
     position: relative;
     padding: 10%;
     width: 100%;
+    background-image: url(./images/ciudad.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.proyector{
-    position: relative;
-    overflow: hidden;
-    left: -13%;
-    background: #000;
+.sobre-mi-contenedor{
+    padding: 5% 30%;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: left;
+    align-items: center;
 }
+
 
 .projector-light {
-    position: absolute;
     left: 0;
-    top: -8rem;
-    right: 30%;
+    position: absolute;
     transform-origin: center left;
-    width: 100%;
+    width: 80%;
     height: 50%;
     background: radial-gradient(circle at center left, rgba(255, 255, 255, 0.2), transparent 60%);
     clip-path: polygon(0 54%, 100% 100%, 100% 0);
@@ -185,9 +182,9 @@ h3{
   }
 
   @keyframes rotate-light {
-    0% { transform: rotate(0deg); }
-    50% { transform: rotate(20deg); }
-    100% { transform: rotate(0deg); }
+    0% { transform: rotate(3deg); }
+    50% { transform: rotate(-8deg); }
+    100% { transform: rotate(3deg); }
   }
 
 .texto-oculto {
@@ -195,3 +192,91 @@ h3{
     color: wheat;
 }
 
+#habilidades{
+    padding: 10%;
+}
+
+.lista-habilidades{
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+    padding: 3%;
+    gap: 5%;
+}
+
+.lista-habilidades li{
+    color: #FFFFFF;
+    list-style-type: none;
+    padding: 1rem 1.5rem;
+    background-color: #1C1D58;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contactame{
+    padding: 10%;
+    background-color: #090909;
+}
+
+.contactame-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5%;
+    gap: 1rem;
+}
+
+.contactame-form h4{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    color: #F5D4A7;
+}
+
+.contactame-form input{
+    padding: 1rem;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+input[type=number] {
+    -moz-appearance: textfield; /* Firefox */
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;  /* Chrome, Safari, Edge */
+    margin: 0;
+}
+
+.contactame-form button{
+    width: 15%;
+    padding: 0.5rem 0.2rem;
+    display: flex;
+    justify-content: center;
+    background-color: #1C1D58;
+    color: #FFFFFF;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.final-pagina{
+    background-image: url(./images/fondoPortafolio.png);
+    background-position: bottom;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lista-final{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0%;
+    margin: 0%;
+}
+
+.lista-final li{
+    list-style-type: none;
+    padding: 0.5rem;
+}
