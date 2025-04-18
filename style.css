@@ -3,18 +3,18 @@
 body{
     background-color: #EEF7FF;
     margin: 0;
-    padding: 0 10%;
+    padding: 0;
     box-sizing: border-box;
+    height: 3000px;
 }
-.navbar{
-    position: sticky;
+.navbar-personal{
+    position: fixed;
     top: 0;
     z-index: 1000; /* para que quede encima del contenido */
     display: flex;
     justify-content: end;
     background-color: #FFFFFF;
     width: 100%;
-    margin: 2% 0;
     padding: 0;
     box-sizing: border-box;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -68,11 +68,15 @@ body{
     width: auto;
     height: auto;
     display: flex;
+    align-items:center;
+    gap: 1rem;
 }
 
 .presentation-titulo img{
-    width: 100px;
-    height: 80px;
+    object-fit: cover; 
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
 }
 
 
