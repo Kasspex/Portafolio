@@ -118,6 +118,10 @@ h2{
     border-radius: 20px;
 }
 
+.presentation-footer a:hover{
+   background-color: #1C1D58;
+}
+
 
 #Proyectos{
     background-color: #FFFFFF;

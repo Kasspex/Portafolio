@@ -107,6 +107,10 @@ h2{
     border-radius: 20px;
 }
 
+.presentation-footer a:hover{
+    background-color:  #1E90FF;
+}
+
 
 #Proyectos{
     padding: 10%;
